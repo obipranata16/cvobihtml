@@ -1,0 +1,86 @@
+/* Reset dasar */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* Navigation bar */
+.navigation { 
+  position: fixed;
+  height: 70px;
+  right: 0; 
+  left: 0;
+  background-color: navy; 
+  box-sizing: border-box;
+  -webkit-box-shadow: 0px 17px 59px 11px rgba(63, 0, 199, 0.62);
+  -moz-box-shadow: 0px 17px 59px 11px rgba(63, 0, 199, 0.62); 
+  box-shadow: 0px 17px 59px 11px rgba(63, 0, 199, 0.62);
+}
+
+/* Judul di dalam navigation */
+.navigation h1 { 
+  position: fixed;
+  top: 0; 
+  left: 0;
+  margin: 15px; 
+  font-family: Arial, sans-serif;
+  background-image: -webkit-linear-gradient(
+    0deg,
+    #4d40ff 0%,
+    #466e85 46%,
+    #FF0055 86%
+  );
+  background-clip: text;
+  -webkit-background-clip: text; 
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+ul {
+position: relative;
+height: 70px; 
+left: 810px;
+gap: 1rem;
+}
+
+li {
+display: inline-block; 
+margin-left: 20px;
+width: 150px; 
+height: 80px; 
+padding-top: 8px; 
+font-weight: bold; 
+list-style: none; 
+text-align: center;
+text-transform: uppercase;
+}
+
+a {
+color: white; 
+font-size: 25px;
+font-family: Arial, Helvetica, sans-serif; 
+text-decoration: none;
+transition: 0.5s;
+}
+a: hover {
+background-color: #a581ff5b;
+box-shadow: 0px 0px 400px 86px #a481ff;
+-webkit-box-shadow: 0px 0px 400px 86px #a481ff;
+-moz- box-shadow: 0px 0px 400px 86px #a481ff; 
+text-decoration: underline white;
+}
+.profile {
+  display: flex;
+  flex-direction: column;   /* susun foto & teks ke bawah */
+  justify-content: center;  /* tengah vertikal */
+  align-items: center;      /* tengah horizontal */
+  text-align: center;
+  min-height: 100vh;        /* tinggi full layar */
+}
+
+.profile img {
+  border-radius: 50%;       /* bikin bulat */
+  border: 5px solid navy;   /* kasih garis pinggir */
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3); /* efek bayangan */
+}
