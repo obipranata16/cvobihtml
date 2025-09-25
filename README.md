@@ -17,3 +17,6 @@
 
 <h5>PENDIDIKAN</h5>
 <P>Page Pendidikan adalah halaman dalam sebuah website yang berfungsi untuk menampilkan riwayat pendidikan seseorang secara terstruktur. Pada halaman ini biasanya dicantumkan jenjang pendidikan yang pernah ditempuh, mulai dari sekolah dasar hingga perguruan tinggi, lengkap dengan tahun masuk dan lulus. Page Pendidikan bertujuan memberikan gambaran mengenai latar belakang akademik pemilik website, sehingga dapat digunakan sebagai informasi pendukung dalam konteks akademik, profesional, maupun personal.</P>
+
+<h6>SKILL</h6>
+<p>Page Skill adalah halaman dalam sebuah website yang menampilkan keterampilan atau kemampuan yang dimiliki seseorang. Halaman ini biasanya memuat daftar keahlian baik hard skill (seperti pemrograman, desain grafis, web desain) maupun soft skill (seperti komunikasi, kerja sama tim). Page Skill berfungsi untuk menunjukkan kompetensi pemilik website secara jelas dan terstruktur, sehingga dapat dijadikan bahan pertimbangan dalam konteks akademik, karier, maupun pengembangan diri.</p>
