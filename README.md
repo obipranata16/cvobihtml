@@ -12,3 +12,5 @@
 <h3>HOME</h3>
 <P>Home adalah halaman utama pada sebuah website yang berfungsi sebagai pintu masuk atau tampilan pertama yang dilihat oleh pengunjung. Halaman ini biasanya berisi gambaran umum mengenai isi website, navigasi menuju halaman lain, serta informasi penting yang ingin ditonjolkan. Home juga berperan sebagai identitas website karena menampilkan struktur, desain, dan kesan pertama bagi pengguna.</P>
 
+<H4>BIODATA</H4>
+<p>“Page Biodata adalah halaman khusus dalam sebuah website yang berfungsi untuk menampilkan informasi pribadi secara lebih lengkap dan terstruktur. Pada halaman ini biasanya terdapat data diri seperti nama, tempat dan tanggal lahir, pendidikan, pengalaman, serta hobi. Page Biodata memudahkan pengunjung untuk mengenal identitas pemilik website secara jelas, serta dapat dijadikan media perkenalan dalam konteks akademik, pekerjaan, maupun personal.”</p>
