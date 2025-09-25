@@ -1,28 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Website Obi</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Website Obi - Pendidikan</title>
+
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body { font-family: Arial, Helvetica, sans-serif; background: #fff; }
+
+  
+    .navigation {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      height: 70px;
+      background-color: navy;
+      box-shadow: 0px 17px 59px 11px rgba(63, 0, 199, 0.62);
+      z-index: 1000;
+    }
+
+    .navigation h1 {
+      position: absolute;
+      top: 50%; left: 20px;
+      transform: translateY(-50%);
+      margin: 0;
+      font-size: 34px;
+      font-family: Arial, sans-serif;
+      background-image: -webkit-linear-gradient(0deg, #4d40ff 0%, #466e85 46%, #FF0055 86%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .navigation ul {
+      position: absolute;
+      right: 40px;
+      top: 50%;
+      transform: translateY(-50%);
+      display: flex;
+      gap: 1rem;
+      list-style: none;
+    }
+
+    .navigation li {
+      width: 150px;
+      height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    .navigation a {
+      color: white;
+      font-size: 20px;
+      text-decoration: none;
+      transition: 0.3s;
+      padding: 6px 8px;
+      border-radius: 4px;
+    }
+
+    .navigation a:hover {
+      background-color: #a581ff5b;
+      text-decoration: underline white;
+    }
+
+   
+    .main {
+      padding-top: 100px; 
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    .pendidikan {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .pendidikan h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: navy;
+    }
+
+    .pendidikan table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    .pendidikan th, .pendidikan td {
+      border: 1px solid #ccc;
+      padding: 12px;
+      text-align: left;
+    }
+
+    .pendidikan th {
+      background-color: #f2f2f2;
+      color: navy;
+    }
+
+    .pendidikan tr:nth-child(even) {
+      background-color: #fafafa;
+    }
+  </style>
 </head>
 <body>
-    <div class="navigation">
-        <h1>OBI PRANATA</h1>
-        <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="BIODATA.html">BIODATA</a></li>
-            <li><a href="pendidikan.html">PENDIDIKAN</a></li>
-            <li><a href="skill.html">SKILL</a></li>
-        <ul>
-    </div>
-    <div class="content">
-        </div>
-      <section class="profile">
-  <h2>HALO, AKU OBI AYAM !</h2>
-</section>
-<a href="index.html">
-  <button>HOME</button>
-</a>
+  
+  <div class="navigation">
+    <h1>OBI PRANATA</h1>
+    <ul>
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="BIODATA.html">BIODATA</a></li>
+      <li><a href="pendidikan.html">PENDIDIKAN</a></li>
+      <li><a href="skill.html">SKILL</a></li>
+    </ul>
+  </div>
+
+  
+  <div class="main">
+    <section class="pendidikan">
+      <h2>Riwayat Pendidikan</h2>
+      <table>
+        <tr>
+          <th>Tingkat</th>
+          <th>Institusi</th>
+          <th>Tahun</th>
+        </tr>
+        <tr>
+          <td>SD</td>
+          <td>SD NEGERI 4 UBUNG</td>
+          <td>2008 - 2014</td>
+        </tr>
+        <tr>
+          <td>SMP</td>
+          <td>SMP NEGERI 10 DENPASAR</td>
+          <td>2014 - 2017</td>
+        </tr>
+        <tr>
+          <td>SMK</td>
+          <td>SMK TI BALI GLOBAL DENPASAR</td>
+          <td>2017 - 2020</td>
+        </tr>
+        <tr>
+          <td>KULIAH</td>
+          <td>UNIVERSITAS PENDIDIKAN NASIONAL<br>TEKNOLOGI INFORMASI</td>
+          <td>2022 - SEKARANG</td>
+        </tr>
+      </table>
+    </section>
+  </div>
 </body>
 </html>

@@ -71,7 +71,7 @@ html, body {
   align-items: center;      
   text-align: center;
   min-height: 100vh;        
-  padding-top: 100px;   /* ✅ biar gak ketutup header */
+  padding-top: 100px;   
 }
 
 .profile img {
@@ -85,7 +85,7 @@ html, body {
   justify-content: center;
   gap: 30px;
   max-width: 1000px;
-  margin: 120px auto; /* kasih jarak dari header fixed */
+  margin: 120px auto; 
   padding: 20px;
   font-family: Arial, sans-serif;
 }

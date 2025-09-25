@@ -6,12 +6,12 @@
   <title>Website Obi - Biodata</title>
 
   <style>
-    /* reset kecil */
+    
     * { box-sizing: border-box; margin: 0; padding: 0; }
 
     html, body { height: 100%; font-family: Arial, Helvetica, sans-serif; background: #fff; }
 
-    /* === HEADER (tetap seperti style-mu, tapi stabil) === */
+   
     .navigation {
       padding: 0;
       position: fixed;
@@ -23,12 +23,12 @@
       -webkit-box-shadow: 0px 17px 59px 11px rgba(63, 0, 199, 0.62);
       -moz-box-shadow: 0px 17px 59px 11px rgba(63, 0, 199, 0.62);
       box-shadow: 0px 17px 59px 11px rgba(63, 0, 199, 0.62);
-      z-index: 1000; /* pastikan header selalu di atas */
+      z-index: 1000; 
     }
 
-    /* judul kiri (gradient text) - posisinya relatif di dalam navigation */
+   
     .navigation h1 {
-      position: absolute;        /* DIUBAH ke absolute agar posisinya tetap di dalam header */
+      position: absolute;      
       top: 50%;
       left: 20px;
       transform: translateY(-50%);
@@ -46,10 +46,10 @@
       -webkit-text-fill-color: transparent;
     }
 
-    /* menu di kanan (tetap terlihat seperti yang kamu pakai) */
+ 
     .navigation ul {
       position: absolute;
-      right: 40px;            /* gunakan right daripada left:810px agar lebih stabil */
+      right: 40px;         
       top: 50%;
       transform: translateY(-50%);
       display: flex;
@@ -62,7 +62,7 @@
     .navigation li {
       display: inline-block;
       margin-left: 20px;
-      /* tetap mempertahankan tinggi/ukuran tombol menu */
+    
       width: 150px;
       height: 70px;
       display: flex;
@@ -88,10 +88,9 @@
       text-decoration: underline white;
     }
 
-    /* === CONTENT / BIODATA ===
-       penting: beri jarak di atas supaya tidak tertutup header fixed */
+    
     .main {
-      padding-top: 100px; /* <-- kunci: memberi ruang untuk header fixed */
+      padding-top: 100px; 
       padding-left: 20px;
       padding-right: 20px;
     }
@@ -111,7 +110,7 @@
       border: 4px solid navy;
       box-shadow: 0 5px 15px rgba(0,0,0,0.3);
       background: white;
-      padding: 6px; /* memberi bingkai putih agar foto tidak menempel header */
+      padding: 6px; 
     }
 
     .biodata .teks {
@@ -122,7 +121,7 @@
       color: #111;
     }
 
-    /* responsif: layar kecil tumpuk kolom */
+    
     @media (max-width: 800px) {
       .navigation h1 { font-size: 22px; left: 12px; }
       .navigation ul { right: 12px; gap: 0.6rem; }
@@ -134,7 +133,7 @@
 </head>
 <body>
 
-  <!-- === HEADER: pastikan tag <ul> ditutup (sangat penting) === -->
+  
   <div class="navigation">
     <h1>OBI PRANATA</h1>
     <ul>
@@ -145,10 +144,10 @@
     </ul>
   </div>
 
-  <!-- utama -->
+  
   <div class="main">
     <section class="biodata">
-      <!-- foto: ganti path jika perlu -->
+      
       <img src="foto/OBI.jpg" alt="Foto Obi" class="foto">
 
       <div class="teks">
