@@ -1,28 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Website Obi</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Website Obi - Biodata</title>
+
+  <style>
+    /* reset kecil */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html, body { height: 100%; font-family: Arial, Helvetica, sans-serif; background: #fff; }
+
+    /* === HEADER (tetap seperti style-mu, tapi stabil) === */
+    .navigation {
+      padding: 0;
+      position: fixed;
+      height: 70px;
+      right: 0;
+      left: 0;
+      background-color: navy;
+      box-sizing: border-box;
+      -webkit-box-shadow: 0px 17px 59px 11px rgba(63, 0, 199, 0.62);
+      -moz-box-shadow: 0px 17px 59px 11px rgba(63, 0, 199, 0.62);
+      box-shadow: 0px 17px 59px 11px rgba(63, 0, 199, 0.62);
+      z-index: 1000; /* pastikan header selalu di atas */
+    }
+
+    /* judul kiri (gradient text) - posisinya relatif di dalam navigation */
+    .navigation h1 {
+      position: absolute;        /* DIUBAH ke absolute agar posisinya tetap di dalam header */
+      top: 50%;
+      left: 20px;
+      transform: translateY(-50%);
+      margin: 0;
+      font-size: 34px;
+      font-family: Arial, sans-serif;
+      background-image: -webkit-linear-gradient(
+        0deg,
+        #4d40ff 0%,
+        #466e85 46%,
+        #FF0055 86%
+      );
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    /* menu di kanan (tetap terlihat seperti yang kamu pakai) */
+    .navigation ul {
+      position: absolute;
+      right: 40px;            /* gunakan right daripada left:810px agar lebih stabil */
+      top: 50%;
+      transform: translateY(-50%);
+      display: flex;
+      gap: 1rem;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .navigation li {
+      display: inline-block;
+      margin-left: 20px;
+      /* tetap mempertahankan tinggi/ukuran tombol menu */
+      width: 150px;
+      height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    .navigation a {
+      color: white;
+      font-size: 20px;
+      font-family: Arial, Helvetica, sans-serif;
+      text-decoration: none;
+      transition: 0.3s;
+      padding: 6px 8px;
+      border-radius: 4px;
+    }
+
+    .navigation a:hover {
+      background-color: #a581ff5b;
+      text-decoration: underline white;
+    }
+
+    /* === CONTENT / BIODATA ===
+       penting: beri jarak di atas supaya tidak tertutup header fixed */
+    .main {
+      padding-top: 100px; /* <-- kunci: memberi ruang untuk header fixed */
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    .biodata {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      gap: 30px;
+      align-items: flex-start;
+      padding: 30px 0;
+    }
+
+    .biodata .foto {
+      width: 220px;
+      border-radius: 10px;
+      border: 4px solid navy;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+      background: white;
+      padding: 6px; /* memberi bingkai putih agar foto tidak menempel header */
+    }
+
+    .biodata .teks {
+      flex: 1;
+      text-align: justify;
+      line-height: 1.6;
+      font-size: 18px;
+      color: #111;
+    }
+
+    /* responsif: layar kecil tumpuk kolom */
+    @media (max-width: 800px) {
+      .navigation h1 { font-size: 22px; left: 12px; }
+      .navigation ul { right: 12px; gap: 0.6rem; }
+      .biodata { flex-direction: column; align-items: center; text-align: center; }
+      .biodata .teks { text-align: center; }
+      .biodata .foto { width: 160px; }
+    }
+  </style>
 </head>
 <body>
-    <div class="navigation">
-        <h1>OBI PRANATA</h1>
-        <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="BIODATA.html">BIODATA</a></li>
-            <li><a href="#PENDIDIKAN">PENDIDIKAN</a></li>
-            <li><a href="#SKILL">SKILL</a></li>
-        <ul>
-    </div>
-    <div class="content">
-        </div>
-      <section class="profile">
-  <h2>HALO, AKU OBI !</h2>
-</section>
-<a href="index.html">
-  <button>HOME</button>
-</a>
+
+  <!-- === HEADER: pastikan tag <ul> ditutup (sangat penting) === -->
+  <div class="navigation">
+    <h1>OBI PRANATA</h1>
+    <ul>
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="BIODATA.html">BIODATA</a></li>
+      <li><a href="pendidikan.html">PENDIDIKAN</a></li>
+      <li><a href="skill.html">SKILL</a></li>
+    </ul>
+  </div>
+
+  <!-- utama -->
+  <div class="main">
+    <section class="biodata">
+      <!-- foto: ganti path jika perlu -->
+      <img src="foto/OBI.jpg" alt="Foto Obi" class="foto">
+
+      <div class="teks">
+        <p>
+          Halo, nama saya <strong>I Made Obi Pranata</strong>, mahasiswa di
+          <strong>Universitas Pendidikan Nasional</strong> 
+          mengambil jurusan <strong>Teknologi Informasi</strong>. Saya lahir dan besar di Denpasar, Bali,
+          dan saat ini sedang menempuh pendidikan dengan fokus pada pengembangan perangkat lunak serta desain web.
+        </p>
+
+        <p>
+          Sejak duduk di bangku <strong>SMK TI Global</strong>, saya sudah terbiasa dengan dunia teknologi,
+          terutama dalam pemrograman dan perancangan sistem. Minat saya pada dunia coding semakin berkembang
+          ketika saya mulai membuat proyek-proyek kecil seperti website sederhana hingga aplikasi berbasis Java.
+        </p>
+
+        <p>
+          Selain belajar, saya juga aktif mengembangkan keterampilan di luar kampus, salah satunya dengan bekerja
+          sampingan sebagai <strong>FREELANCER</strong> untuk menambah pengalaman sekaligus melatih manajemen waktu.
+          Hobi saya antara lain adalah ngoding, desain web, dan programming.
+        </p>
+      </div>
+    </section>
+  </div>
+
 </body>
 </html>
