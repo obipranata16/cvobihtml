@@ -20,3 +20,5 @@
 
 <h6>SKILL</h6>
 <p>Page Skill adalah halaman dalam sebuah website yang menampilkan keterampilan atau kemampuan yang dimiliki seseorang. Halaman ini biasanya memuat daftar keahlian baik hard skill (seperti pemrograman, desain grafis, web desain) maupun soft skill (seperti komunikasi, kerja sama tim). Page Skill berfungsi untuk menunjukkan kompetensi pemilik website secara jelas dan terstruktur, sehingga dapat dijadikan bahan pertimbangan dalam konteks akademik, karier, maupun pengembangan diri.</p>
+
+<h7>KESIMPULAN</h7>
